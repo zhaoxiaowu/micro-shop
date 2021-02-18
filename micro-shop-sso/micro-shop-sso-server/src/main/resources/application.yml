@@ -1,0 +1,134 @@
+server:
+  port: 9999
+  #spring:
+  #  freemarker:
+  #    charset: UTF-8
+  #    request-context-attribute: request
+  #    settings:
+  #      number_format: 0.##########
+  #    suffix: .ftl
+  #    templateLoaderPath: classpath:/templates/
+  mvc:
+    static-path-pattern: /static/**
+  resources:
+    static-locations: classpath:/static/
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    ssl: false
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: -1s
+        min-idle: 0
+    timeout: 5s
+sso:
+  excluded:
+#    paths: /,/login,/js/**,/image/**,/css/**
+    paths: /**
+  oauth:
+    gitee:
+      clientId:
+      clientSecret:
+      redirectUri:
+    github:
+      clientId: 21233f501ab9a2e470b1
+      clientSecret: 756896c5720ad20874d05ad1406d77a7b250010e
+      redirectUri: http://127.0.0.1:9999/oauth/callback/github
+    weibo:
+      clientId:
+      clientSecret:
+      redirectUri:
+    dingtalk:
+      clientId:
+      clientSecret:
+      redirectUri:
+    baidu:
+      clientId:
+      clientSecret:
+      redirectUri:
+    coding:
+      clientId:
+      clientSecret:
+      redirectUri:
+    tencentCloud:
+      clientId:
+      clientSecret:
+      redirectUri:
+    oschina:
+      clientId:
+      clientSecret:
+      redirectUri:
+    alipay:
+      clientId:
+      clientSecret:
+      redirectUri:
+      alipayPublicKey:
+    qq:
+      clientId:
+      clientSecret:
+      redirectUri:
+    wechat:
+      clientId:
+      clientSecret:
+      redirectUri:
+    taobao:
+      clientId:
+      clientSecret:
+      redirectUri:
+    google:
+      clientId:
+      clientSecret:
+      redirectUri:
+    facebook:
+      clientId:
+      clientSecret:
+      redirectUri:
+    douyin:
+      clientId:
+      clientSecret:
+      redirectUri:
+    linkedin:
+      clientId:
+      clientSecret:
+      redirectUri:
+    microsoft:
+      clientId:
+      clientSecret:
+      redirectUri:
+    mi:
+      clientId:
+      clientSecret:
+      redirectUri:
+    toutiao:
+      clientId:
+      clientSecret:
+      redirectUri:
+    teambition:
+      clientId:
+      clientSecret:
+      redirectUri:
+    renren:
+      clientId:
+      clientSecret:
+      redirectUri:
+    pinterest:
+      clientId:
+      clientSecret:
+      redirectUri:
+    stackoverflow:
+      clientId:
+      clientSecret:
+      redirectUri:
+      stackOverflowKey:
+    huawei:
+      clientId:
+      clientSecret:
+      redirectUri:
+    wechatEnterprise:
+      clientId:
+      clientSecret:
+      redirectUri:
+      agentId:

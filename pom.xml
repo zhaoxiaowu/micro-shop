@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.zxw</groupId>
+    <artifactId>micro-shop</artifactId>
+    <packaging>pom</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <modules>
+        <module>micro-shop-denpendies</module>
+        <module>micro-shop-common</module>
+        <module>micro-shop-sso</module>
+        <module>micro-shop-auth</module>
+        <module>micro-shop-gateway</module>
+        <module>micro-shop-service-api</module>
+        <module>micro-shop-service</module>
+    </modules>
+
+
+</project>
